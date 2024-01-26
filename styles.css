@@ -41,6 +41,7 @@ body {
 .container {
   max-width: 375px;
   border-radius: 35px;
+  box-shadow: 0 0 20px hsla(224, 30%, 27%, 0.1);
 }
 
 .results-section {
@@ -126,7 +127,7 @@ button:hover {
   color: hsla(224, 30%, 27%, 0.5);
 }
 
-.actual-score {
+.category-score {
   color: hsla(224, 30%, 27%, 1);
   font-weight: 700;
 }
@@ -139,63 +140,63 @@ button:hover {
   position: relative;
 }
 
-.summary-container.reaction {
+.summary-container.category-one {
   background-color: hsla(0, 100%, 67%, 0.1);
 }
 
-.summary-container.reaction .summary-container-title {
+.summary-container.category-one .summary-container-title {
   color: var(--primary-color-red);
 }
 
-.summary-container.reaction .summary-container-title::before {
+.summary-container.category-one .summary-container-title::before {
   content: url(assets/images/icon-reaction.svg);
   position: absolute;
   left: 10px;
 }
 
-.summary-container.memory {
+.summary-container.category-two {
   background-color: hsla(39, 100%, 56%, 0.1);
 }
 
-.summary-container.memory .summary-container-title {
+.summary-container.category-two .summary-container-title {
   color: var(--primary-color-yellow);
 }
 
-.summary-container.memory .summary-container-title::before {
+.summary-container.category-two .summary-container-title::before {
   content: url(assets/images/icon-memory.svg);
   position: absolute;
   left: 10px;
 }
 
-.summary-container.verbal {
+.summary-container.category-three {
   background-color: hsla(166, 100%, 37%, 0.1);
 }
 
-.summary-container.verbal .summary-container-title {
+.summary-container.category-three .summary-container-title {
   color: var(--primary-color-green);
 }
 
-.summary-container.verbal .summary-container-title::before {
+.summary-container.category-three .summary-container-title::before {
   content: url(assets/images/icon-verbal.svg);
   position: absolute;
   left: 10px;
 }
 
-.summary-container.visual {
+.summary-container.category-four {
   background-color: hsla(234, 85%, 45%, 0.1);
 }
 
-.summary-container.visual .summary-container-title {
+.summary-container.category-four .summary-container-title {
   color: var(--primary-color-blue);
 }
 
-.summary-container.visual .summary-container-title::before {
+.summary-container.category-four .summary-container-title::before {
   content: url(assets/images/icon-visual.svg);
   position: absolute;
   left: 10px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
   body {
     justify-content: center;
   }
