@@ -29,3 +29,52 @@
 html {
   font-family: "Hanken Grotesk", sans-serif;
 }
+
+.container {
+  max-width: 375px;
+}
+
+.results-section {
+  background: linear-gradient(-180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 0 0 35px 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 25px 0 30px 0;
+  position: relative;
+}
+
+.bg-gradient {
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  position: absolute;
+  top: 70px;
+}
+
+.results-section-title {
+  margin-bottom: 20px;
+}
+
+p {
+  color: var(--neutral-color-lavender);
+  font-size: 1.125rem;
+}
+
+.results-section .score {
+  color: var(--neutral-color-white);
+  display: block;
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: -5px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.results-section-summary {
+  color: var(--neutral-color-white);
+  font-size: 1.5rem;
+  margin: 50px 0 10px 0;
+}
