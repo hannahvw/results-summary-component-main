@@ -30,8 +30,17 @@ html {
   font-family: "Hanken Grotesk", sans-serif;
 }
 
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+}
+
 .container {
   max-width: 375px;
+  border-radius: 35px;
 }
 
 .results-section {
@@ -102,6 +111,11 @@ button {
   border: none;
   outline: none;
   padding: 15px;
+}
+
+button:hover {
+  cursor: pointer;
+  background: linear-gradient(-180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
 .summary-container-title {
@@ -179,4 +193,28 @@ button {
   content: url(assets/images/icon-visual.svg);
   position: absolute;
   left: 10px;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    justify-content: center;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 700px;
+    max-height: 500px;
+    border-radius: 35px;
+    box-shadow: 0 0 20px hsla(224, 30%, 27%, 0.1);
+    margin-bottom: 10px;
+  }
+
+  .results-section {
+    min-width: 350px;
+    border-radius: 35px;
+  }
+
+  .summary-section {
+    min-width: 350px;
+  }
 }
