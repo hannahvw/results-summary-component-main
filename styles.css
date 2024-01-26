@@ -117,7 +117,7 @@ button {
   font-weight: 700;
 }
 
-.reaction-container {
+.summary-container {
   border-radius: 10px;
   padding: 10px 15px 10px 40px;
   display: flex;
@@ -125,65 +125,57 @@ button {
   position: relative;
 }
 
-.reaction-container .summary-container-title {
+.summary-container.reaction {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.summary-container.reaction .summary-container-title {
   color: var(--primary-color-red);
 }
 
-.reaction-container .summary-container-title::before {
+.summary-container.reaction .summary-container-title::before {
   content: url(assets/images/icon-reaction.svg);
   position: absolute;
   left: 10px;
 }
 
-.memory-container {
-  border-radius: 10px;
-  padding: 10px 15px 10px 40px;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
+.summary-container.memory {
+  background-color: hsla(39, 100%, 56%, 0.1);
 }
 
-.memory-container .summary-container-title {
+.summary-container.memory .summary-container-title {
   color: var(--primary-color-yellow);
 }
 
-.memory-container .summary-container-title::before {
+.summary-container.memory .summary-container-title::before {
   content: url(assets/images/icon-memory.svg);
   position: absolute;
   left: 10px;
 }
 
-.verbal-container {
-  border-radius: 10px;
-  padding: 10px 15px 10px 40px;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
+.summary-container.verbal {
+  background-color: hsla(166, 100%, 37%, 0.1);
 }
 
-.verbal-container .summary-container-title {
+.summary-container.verbal .summary-container-title {
   color: var(--primary-color-green);
 }
 
-.verbal-container .summary-container-title::before {
+.summary-container.verbal .summary-container-title::before {
   content: url(assets/images/icon-verbal.svg);
   position: absolute;
   left: 10px;
 }
 
-.visual-container {
-  border-radius: 10px;
-  padding: 10px 15px 10px 40px;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
+.summary-container.visual {
+  background-color: hsla(234, 85%, 45%, 0.1);
 }
 
-.visual-container .summary-container-title {
+.summary-container.visual .summary-container-title {
   color: var(--primary-color-blue);
 }
 
-.visual-container .summary-container-title::before {
+.summary-container.visual .summary-container-title::before {
   content: url(assets/images/icon-visual.svg);
   position: absolute;
   left: 10px;
