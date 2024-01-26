@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+:root {
+  --primary-color-red: hsl(0, 100%, 67%);
+  --primary-color-yellow: hsl(39, 100%, 56%);
+  --primary-color-green: hsl(166, 100%, 37%);
+  --primary-color-blue: hsl(234, 85%, 45%);
+
+  --neutral-color-white: hsl(0, 0%, 100%);
+  --neutral-color-blue: hsl(221, 100%, 96%);
+  --neutral-color-lavender: hsl(241, 100%, 89%);
+  --neutral-color-gray: hsl(224, 30%, 27%);
+}
+
+html {
+  font-family: "Hanken Grotesk", sans-serif;
+}
